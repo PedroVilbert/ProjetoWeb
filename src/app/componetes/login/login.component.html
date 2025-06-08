@@ -1,17 +1,30 @@
-<div class="container mt-5" style="max-width: 400px;">
-    <h2 class="mb-4">Login</h2>
-  
-    <div *ngIf="erro" class="alert alert-danger">{{ erro }}</div>
-  
-    <div class="form-group mb-3">
-      <label for="email">Email</label>
-      <input type="email" id="email" class="form-control" [(ngModel)]="email" name="email" placeholder="Digite seu email">
+<div class="verde">
+    <div class="container mt-5 formLogin" style="max-width: 400px;">
+
+      <h2 class="mb-4 titulo">Login</h2>
+      <div *ngIf="erro" class="alert alert-danger">{{ erro }}</div>
+      <div class="form-group mb-3">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="form-control" [(ngModel)]="email" name="email"
+          placeholder="Digite seu email">
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" class="form-control" [(ngModel)]="senha" name="senha"
+          placeholder="Digite sua senha">
+      </div>
     </div>
-  
-    <div class="form-group mb-3">
-      <label for="senha">Senha</label>
-      <input type="password" id="senha" class="form-control" [(ngModel)]="senha" name="senha" placeholder="Digite sua senha">
-    </div>
-  
-    <button (click)="logar()" class="btn btn-primary w-100">Entrar</button>
+  </div>
+
+  <div>
+  <img src="https://thumbs.dreamstime.com/b/bandera-vertical-con-café-express-sobre-los-granos-de-una-taza-blanca-genérica-recientemente-preparado-asados-la-ilustración-149194784.jpg" width="100%" height="100%">
+  </div>
+
+  <div>
+    <button (click)="logar()" class="btn botaoLogin">Entrar</button>
+  </div>
+
+  <div>
+  <a class="linkCadastro nav-link" routerLink="/cadastro">Não tenho conta</a>
   </div>
