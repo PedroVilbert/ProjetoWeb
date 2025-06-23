@@ -1,4 +1,28 @@
 
+.barraMenu{
+    padding: 1%;
+}
+
+
 .dedo {
     cursor: pointer;
+}
+
+.corFundo{
+    background-color: #2F3E2E;
+;
+}
+
+.titulo{
+    color: antiquewhite;
+}
+
+.botao{
+    color: antiquewhite;
+}
+.botao:hover{
+    background-color: #40583f;
+    border-radius: 8px;
+    color: white;
+
 }

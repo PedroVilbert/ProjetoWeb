@@ -1,20 +1,32 @@
-<form class="formulario" (ngSubmit)="salvar()" #form="ngForm">
-  <h2 class="titulo\"> {{usuario.id ? 'Atualizar Usúario' : 'Cadastrar Usúario'}} </h2>
-  <label class="mb-3">Nome:</label>
-  <input class="form-control" type="text" name="nome" id ="nome" (change)="validaNome()" [(ngModel)]="usuario.nome" required />
-  <span class="erro" *ngIf="isNome">Nome Inválido</span>
-  <br/>
 
-  <label class="mb-3">Email:</label>
-  <input class="form-control" type="email" name="email" id ="email" (change)="validaEmail()" [(ngModel)]="usuario.email" required />
-  <span class="erro" *ngIf="isEmail">Email Inválido</span>
-  <br/>
+<div class="verde">
+  <div class="fundo-curvas"></div>
+  <div class="fundoFormulario"> 
+      <form class="formulario" (ngSubmit)="salvar()" #form="ngForm">
+        <h2 class="titulo\"> {{usuario.id ? 'Atualizar Usúario' : 'Cadastrar Usúario'}} </h2>
+        <label class="mb-3">Nome:</label>
+        <input class="form-control" type="text" name="nome" id ="nome" (change)="validaNome()" [(ngModel)]="usuario.nome" required />
+        <span class="erro" *ngIf="isNome">Nome Inválido</span>
+        <br/>
 
-  <label class="mb-3">Senha:</label>
-  <input class="form-control" type="password" name="senha" id ="senha" (change)="validaSenha()" [(ngModel)]="usuario.senha" required />
-  <span class="erro" *ngIf="isSenha">Senha Inválida</span>
-  <br/>
+        <label class="mb-3">Email:</label>
+        <input class="form-control" type="email" name="email" id ="email" (change)="validaEmail()" [(ngModel)]="usuario.email" required />
+        <span class="erro" *ngIf="isEmail">Email Inválido</span>
+        <br/>
 
-  <button class="form-control" type="submit" [disabled]="form.invalid"> {{ usuario.id ? 'Atualizar Usúario' : 'Cadastrar Usúario'}} </button>
-  
-</form> 
+        <label class="mb-3">Senha:</label>
+        <input class="form-control" type="password" name="senha" id ="senha" (change)="validaSenha()" [(ngModel)]="usuario.senha" required />
+        <span class="erro" *ngIf="isSenha">Senha Inválida</span>
+        <br/>
+        <button class="botaoCadastro" type="submit" [disabled]="form.invalid"> {{ usuario.id ? 'Atualizar Usúario' : 'Cadastrar Usúario'}} </button>
+      </form> 
+    </div>
+  </div>
+
+
+
+
+<!-- <div>
+  <img src="https://thumbs.dreamstime.com/b/copo-de-café-no-feijão-de-café-do-assado-com-espaço-da-cópia-do-texto-vertical-78658724.jpg" width="100%" height="100%">
+</div> -->
+

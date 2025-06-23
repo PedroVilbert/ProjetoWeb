@@ -1,0 +1,30 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2F3E2E;
+}
+
+.quadrado1 {
+    background-color: white;
+    position: relative; 
+    width: 60%;
+    z-index: 1;
+}
+
+h2 {
+    text-align: center;
+    position: relative;
+    font-size: 5rem;
+    color:antiquewhite;
+    top: 5%;
+}
+
+p{
+    text-align: center;
+    position: relative;
+    font-size: 2rem;
+    color: antiquewhite;
+    top: 5%;
+}

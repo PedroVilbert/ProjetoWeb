@@ -1,16 +1,14 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Cafe SI</a>
+<nav class="navbar navbar-expand-lg corFundo barraMenu">
+  <a class="navbar-brand titulo" href="#">Cafe SI</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" routerLink="/home">Home <span class="sr-only"></span></a>
-      <a class="nav-item nav-link"  routerLink="/consulta">Consulta</a>
-      <a class="nav-item nav-link" routerLink="/cadastro">Cadastro</a>
-      <a class="nav-item nav-link" routerLink="/listar">Listar</a>
-      <a class="nav-item nav-link" routerLink="/login">Login</a>
-      <a class="nav-item nav-link dedo" (click)="sair()">Sair</a>
+      <a class="nav-item nav-link botao" routerLink="/home">Home<span class="sr-only"></span></a>
+      <a class="nav-item nav-link botao"  routerLink="/consulta">Meus Pedidos</a>
+      <a class="nav-item nav-link botao" routerLink="/listar">Cardápio</a>
+      <a class="nav-item nav-link dedo botao" (click)="sair()">Sair</a>
     </div>
   </div>
 </nav>
