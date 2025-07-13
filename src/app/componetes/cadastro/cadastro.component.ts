@@ -5,6 +5,7 @@ import { UsuarioService } from '../../services/usuario.service';
 import { ActivatedRoute } from '@angular/router';
 
 
+
 @Component({
   selector: 'app-cadastro',
   standalone: false,
@@ -24,7 +25,7 @@ export class CadastroComponent implements OnInit{
     const id = this.route.snapshot.paramMap.get('id');
 
     if (id) {
-      this.usuarioService.gteListarPorId(id).subscribe({
+      this.usuarioService.getListarPorId(id).subscribe({
         next: (res) => this.usuario = res,
         error: (err) => console.error('Erro ao buscar usuário:', err)
       });

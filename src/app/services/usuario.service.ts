@@ -8,6 +8,9 @@ import { Observable } from 'rxjs';
 })
 
 export class UsuarioService {
+    getUsuarioPorId(id: string) {
+    throw new Error('Method not implemented.');
+  }
 
   constructor(private http: HttpClient) { }
 
@@ -21,7 +24,7 @@ export class UsuarioService {
     return this.http.get<Usuario[]>(this.api);
   }
 
-  gteListarPorId(id: any): Observable<Usuario>{
+  getListarPorId(id: any): Observable<Usuario>{
     return this.http.get<Usuario>(`${this.api}/${id}`);
   }
 
@@ -32,8 +35,5 @@ export class UsuarioService {
   atualizar(id: any, usuario: Usuario): Observable<Usuario> {
     return this.http.put<Usuario>(`${this.api}/${id}`, usuario);
   }
-
-
-
   
 }

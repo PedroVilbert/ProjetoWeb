@@ -6,6 +6,7 @@ import { CadastroComponent } from './componetes/cadastro/cadastro.component';
 import { ListarUsuarioComponent } from './componetes/listar-usuario/listar-usuario.component';
 import { LoginComponent } from './componetes/login/login.component';
 import { AuthGuard } from './guards/auth.guard';
+import { ListarProdutoComponent } from './componetes/listar-produto/listar-produto.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path : 'consulta', component: ConsultaCepComponent, canActivate: [AuthGuard]},
   {path : 'login', component: LoginComponent},
   {path : 'listar', component: ListarUsuarioComponent, canActivate: [AuthGuard]},
+  {path : 'listarProduto', component: ListarProdutoComponent, canActivate: [AuthGuard]},
   {path : '', redirectTo: '/home', pathMatch: 'full'}
 ];
 

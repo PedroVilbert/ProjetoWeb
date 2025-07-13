@@ -9,6 +9,15 @@ export class AuthGuard implements CanActivate {
   constructor(private router: Router) { }
 
   canActivate(): boolean {
+    // Verifica se está no navegador
+    const isBrowser = typeof window !== 'undefined' && typeof localStorage !== 'undefined';
+
+    if (!isBrowser) {
+      // Em ambiente sem localStorage (ex: SSR), decide se bloqueia ou libera
+      // Por segurança, bloqueia o acesso:
+      return false;
+    }
+
     const usuario = localStorage.getItem('usuarioLogado');
     console.log(usuario);
 

@@ -1,30 +1,133 @@
-body{
-    margin: 0%;
-    padding: 0%;
-    width: 100vw;
-    height: 100vh;
-    background-color: #2F3E2E;
+/* Reset básico e tipografia */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background-color: #2f3e2e; /* Fundo sólido */
+  color: #f7e7ce;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.quadrado1 {
-    background-color: white;
-    position: relative; 
-    width: 60%;
-    z-index: 1;
+/* Container do carrossel */
+.carousel-container {
+  width: 80%;
+  margin: 40px auto 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
 }
 
+/* Imagens do carrossel */
+.carousel-inner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.carousel-inner img:hover {
+  transform: scale(1.05);
+}
+
+/* Fade entre slides */
+.carousel-fade .carousel-item {
+  transition: opacity 1s ease-in-out;
+}
+
+/* Controles do carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(85%) sepia(70%) saturate(750%) hue-rotate(5deg);
+  background-size: 100% 100%;
+  height: 40px;
+  width: 40px;
+}
+
+/* Indicadores (bolinhas) */
+.carousel-indicators li {
+  background-color: rgba(247, 231, 206, 0.6);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .active {
+  background-color: #f7e7ce;
+}
+
+/* Título principal */
 h2 {
-    text-align: center;
-    position: relative;
-    font-size: 5rem;
-    color:antiquewhite;
-    top: 5%;
+  font-size: 3.5rem;
+  margin: 30px auto 10px;
+  font-weight: 800;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  color: #fbe8c6;
+  letter-spacing: 1px;
 }
 
-p{
-    text-align: center;
-    position: relative;
-    font-size: 2rem;
-    color: antiquewhite;
-    top: 5%;
+/* Parágrafos principais */
+
+.intro{
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+  text-align: justify   ;
+  color: #f4e9d8;
+}
+
+
+.final {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+  text-align: center;
+  color: #f4e9d8;
+}
+
+/* Bloco com destaque branco */
+.destaque {
+  background-color: #f7e7ce;
+  color: #2f3e2e;
+  padding: 30px 20px;
+  margin: 20px auto 40px;
+  border-radius: 15px;
+  max-width: 900px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Itens do destaque com alinhamento bonito */
+.destaque p {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: background 0.3s ease;
+}
+
+.destaque p:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #2f3e2e;
+  padding: 1%;
 }

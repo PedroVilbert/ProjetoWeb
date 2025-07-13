@@ -18,6 +18,7 @@ import { CadastroComponent } from './componetes/cadastro/cadastro.component';
 import { ListarUsuarioComponent } from './componetes/listar-usuario/listar-usuario.component';
 import { LoginComponent } from './componetes/login/login.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { ListarProdutoComponent } from './componetes/listar-produto/listar-produto.component';
 
 
 
@@ -31,6 +32,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     CadastroComponent,
     ListarUsuarioComponent,
     LoginComponent,
+    ListarProdutoComponent,
 
   ],
   imports: [

@@ -1,0 +1,28 @@
+<body>
+  <div class="cardapio-container">
+    <h2 class="cardapio-titulo">Cardápio</h2>
+
+    <ul class="cardapio-lista">
+      <li class="cardapio-item" *ngFor="let produto of produtos" (click)="abrirReceita(produto)">
+        <div class="item-conteudo">
+          <img [src]="produto.imagem" alt="{{ produto.nome }}" class="item-imagem" />
+          <div class="item-texto">
+            <h5 class="item-nome">{{ produto.nome }}</h5>
+            <span class="item-preco">R$ {{ produto.valor | number: '1.2-2' }}</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Modal da receita -->
+    <div class="modal-receita" *ngIf="produtoSelecionado">
+      <div class="modal-conteudo">
+        <h3>{{ produtoSelecionado.nome }}</h3>
+        <p>{{ produtoSelecionado.receita }}</p>
+        <button (click)="fecharReceita()">Fechar</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+<footer></footer>
