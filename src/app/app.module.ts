@@ -19,6 +19,9 @@ import { ListarUsuarioComponent } from './componetes/listar-usuario/listar-usuar
 import { LoginComponent } from './componetes/login/login.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ListarProdutoComponent } from './componetes/listar-produto/listar-produto.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CommonModule } from '@angular/common';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -40,7 +43,10 @@ import { ListarProdutoComponent } from './componetes/listar-produto/listar-produ
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    NgbModule, // Importa o módulo do ng-bootstrap
+    CommonModule,
+    NgbCarouselModule
   ],
   providers: [
     provideClientHydration(withEventReplay())
