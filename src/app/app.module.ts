@@ -44,7 +44,7 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     HttpClientModule,
     MatSnackBarModule,
-    NgbModule, // Importa o módulo do ng-bootstrap
+    NgbModule,
     CommonModule,
     NgbCarouselModule
   ],

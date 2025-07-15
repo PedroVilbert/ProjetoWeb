@@ -13,7 +13,7 @@ body {
 /* Container do carrossel */
 .carousel-container {
   position: relative; /* ESSENCIAL para posicionar botões dentro */
-  width: 80%;
+  width: 90%;
   margin: 40px auto 20px;
   border-radius: 15px;
   overflow: hidden;
